@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.ExpressIn" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/accent_blue</item>
+        <item name="colorPrimaryVariant">@color/bg2</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/accent_green</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:colorBackground">@color/bg_dark</item>
+        <item name="colorSurface">@color/card_bg</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="android:windowBackground">@color/bg_dark</item>
+        <!-- Status bar: make it transparent so AppBarLayout fills behind it -->
+        <item name="android:statusBarColor">@color/card_bg</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <!-- Navigation bar -->
+        <item name="android:navigationBarColor">@color/bg_dark</item>
+        <!-- TextInputLayout -->
+        <item name="boxStrokeColor">@color/accent_blue</item>
+        <item name="hintTextColor">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_secondary</item>
+    </style>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000">
+
+    <!-- Camera preview fills screen -->
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <!-- Scan frame overlay -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Top dark overlay -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="#AA000000"
+            android:layout_gravity="top"
+            android:layout_marginBottom="0dp"/>
+
+        <!-- Scan guide box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="将条形码或二维码对准框内"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:background="#88000000"
+                android:padding="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Scan frame -->
+            <FrameLayout
+                android:layout_width="260dp"
+                android:layout_height="200dp"
+                android:background="@drawable/scan_frame">
+            </FrameLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="自动识别，无需点击"
+                android:textColor="#AAFFFFFF"
+                android:textSize="12sp"
+                android:layout_marginTop="16dp"/>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- Cancel button at bottom -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCancelScan"
+        android:layout_width="200dp"
+        android:layout_height="52dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginBottom="48dp"
+        android:text="取消扫码"
+        android:textSize="16sp"
+        app:backgroundTint="#CC333333"
+        app:cornerRadius="26dp"
+        xmlns:app="http://schemas.android.com/apk/res-auto"/>
+
+</FrameLayout>

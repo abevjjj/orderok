@@ -1,0 +1,17 @@
+# Android generated
+*.iml
+.gradle/
+local.properties
+.idea/
+.DS_Store
+build/
+captures/
+.externalNativeBuild/
+.cxx/
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# Gradle wrapper jar (大文件，从网络下载)
+gradle/wrapper/gradle-wrapper.jar

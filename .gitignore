@@ -1,0 +1,30 @@
+# Python / Flask
+__pycache__/
+*.py[cod]
+*.pyo
+web/backend/instance/
+web/backend/*.db
+.env
+
+# Node / Vite
+web/frontend/node_modules/
+web/frontend/dist/
+web/frontend/.vite/
+
+# Android
+android/.gradle/
+android/local.properties
+android/.idea/
+android/app/build/
+android/build/
+android/captures/
+android/gradle/wrapper/gradle-wrapper.jar
+*.apk
+*.aab
+*.keystore
+*.jks
+
+# OS
+.DS_Store
+Thumbs.db
+*.iml

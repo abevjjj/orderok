@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark theme palette matching web version -->
+    <color name="bg_dark">#0f1117</color>
+    <color name="card_bg">#1e2235</color>
+    <color name="bg2">#1a1d27</color>
+    <color name="text_primary">#e8eaf0</color>
+    <color name="text_secondary">#99a0b8</color>
+    <color name="accent_blue">#4f8ef7</color>
+    <color name="accent_green">#3dd68c</color>
+    <color name="accent_red">#ff6b6b</color>
+    <color name="accent_orange">#ffaa44</color>
+    <color name="white">#FFFFFF</color>
+    <color name="border">#1a1a2e</color>
+</resources>
