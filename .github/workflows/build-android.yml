@@ -41,7 +41,9 @@ jobs:
         run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --stacktrace
+        run: |
+          set -o pipefail
+          ./gradlew assembleDebug --stacktrace --info | tee gradle-build.log
 
       - name: Upload APK artifact
         uses: actions/upload-artifact@v6
@@ -49,6 +51,14 @@ jobs:
           name: ExpressIn-debug-${{ github.run_number }}
           path: android/app/build/outputs/apk/debug/app-debug.apk
           retention-days: 30
+
+      - name: Upload build log
+        if: failure()
+        uses: actions/upload-artifact@v6
+        with:
+          name: gradle-build-log-${{ github.run_number }}
+          path: android/gradle-build.log
+          retention-days: 7
 
       - name: Print APK size
         run: ls -lh app/build/outputs/apk/debug/app-debug.apk
