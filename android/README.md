@@ -16,6 +16,7 @@
 3. 选择 **Build Android APK** → **Run workflow**
 4. 等待约 3-5 分钟构建完成
 5. 在 workflow 运行结果页面下载 `ExpressIn-debug-xxx.zip`，解压得到 `app-debug.apk`
+6. 也可以直接去仓库的 **Releases** 页面下载最新的 `Android APK (latest)` 资产
 
 > APK 保留 30 天，每次 push 到 main/master 自动触发构建。
 >

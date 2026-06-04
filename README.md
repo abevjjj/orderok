@@ -53,7 +53,7 @@ cd web/frontend && npm run dev
 **通过 GitHub Actions 构建 APK：**
 1. Push 代码到 GitHub
 2. 进入 `Actions` → `Build Android APK` → `Run workflow`
-3. 构建完成后下载 Artifact 中的 APK
+3. 构建完成后可在 `Actions` 下载 Artifact，也可以在仓库 `Releases` 页面下载最新 APK
 
 > 当前 workflow 只构建可直接安装的 `debug APK`。如果后续需要发布签名 `release APK`，还要补充 keystore 和签名配置。
 
